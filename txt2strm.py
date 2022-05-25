@@ -3,6 +3,8 @@ import os
 
 # SAVING FOLDER
 output_folder = 'STRM'
+# LINKS FILE
+links_file = 'links.txt'
 
 # read links from txt file and save each links it a separate file
 #
@@ -28,7 +30,7 @@ if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
 # open file
-infile = open('links.txt', 'r')
+infile = open(links_file, 'r')
 # read lines from file
 lines = infile.readlines()
 # close file
